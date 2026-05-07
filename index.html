@@ -2,19 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Watch ME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALORANT 充值入口</title>
 </head>
-<body style="width: 100%;">
-    <img src="images/film.png" alt="MY PICTURE" title="CUTE" width="500px">
-    <marquee behavior="slide" direction="left" style="color: rgb(0, 94, 255);" >WATCH</marquee>
-    <marquee behavior="slide" direction="left" style="color: aquamarine;">WATCH</marquee>
-    <marquee behavior="slide" direction="up down" style="color: blueviolet;">WATCH ME</marquee>
-    <marquee behavior="slide" direction="right" style="color: chartreuse;">WATCH ME</marquee>
-    <marquee behavior="slide" direction="right" style="color: cyan;">WATCH WATCH WATCH</marquee>
-    <marquee behavior="slide" direction="left" style="color: rgb(0, 94, 255);" >WATCH</marquee>
-    <marquee behavior="slide" direction="left" style="color: aquamarine;">WATCH</marquee>
-    <marquee behavior="slide" direction="up down" style="color: blueviolet;">WATCH ME</marquee>
-    <marquee behavior="slide" direction="right" style="color: chartreuse;">WATCH ME</marquee>
-    <marquee behavior="slide" direction="right" style="color: cyan;">WATCH WATCH WATCH</marquee>
+<body>
+    <form action="#" method="post">
+    <table border="1" width="100%" >
+        <caption style="color: rgb(244, 21, 47) ;background-color : #00ffff"> 请输入充值信息 </caption>
+        <thead >
+        <tr>
+            <td>账号</td>
+            <td><input type="text" name = "username" ></td>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td><input type="password" name = "password" ></td>
+        </tr>
+        <tr>
+            <td>备注</td>
+            <td><textarea name="intro" rows="10" cols="40">What can i say</textarea></td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td>
+                <input type="radio" name="gender" value="male" id="male" checked>
+                <label for="male">男</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">女</label>
+            </td>
+        </tr>
+        <tr>
+            <td>充值类型</td>
+            <td><input type="checkbox" name = "type" value = "王国币" checked>王国币
+                <input type="checkbox" name = "type" value = "点券" >点券
+                <input type="checkbox" name = "type" value = "R点" >R点
+                <input type="checkbox" name = "type" value = "欢乐豆" >欢乐豆
+            </td>
+        </tr>
+        <tr>
+            <td>城市</td>
+            <td><select name="workplace" size="4">
+                <option value="beijing">北京</option>
+                <option value="dalian">大连</option>
+                <option value="zhengzhou">郑州</option>
+                <option value="shenzhen">深圳</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>上传照片</td>
+            <td><input type="file" name = "photo"></td>
+        </tr>
+        <tr>
+            <td>隐藏域</td>
+            <td><input type="hidden" name = "hidden" value = "hidden_value"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="提交" onclick="alert('提交成功！')">
+                <input type="reset" value="重置">
+                <input type="button" value="别点击我" onclick="alert('充值成功！才怪呢！乐哥逗逗你呀')">
+            </td>
+        </tr>
+        </thead>
+    </table>
+</form>
 </body>
 </html>
